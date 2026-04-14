@@ -1,0 +1,126 @@
+Two-Pointer Technique Approaches
+
+1. Opposite-End / Two-End Pointers
+
+    Place one pointer at the start, one at the end. Move inward based on conditions.
+
+    Pseudocode
+        int left = 0;
+        int right = n - 1;
+
+        while (left < right) {
+            if (condition_met) {
+                // do something
+                left++;
+                right--;
+            } else if (condition1) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+
+//_________________________________________________________________\\
+
+2. Sliding Window
+
+    Concept:
+        Maintain a “window” of elements in an array/string using two pointers.
+        Expand or shrink the window based on a condition.
+        Often used for subarrays/substrings with constraints.
+
+    Types:
+        Fixed-size window → window size is constant.
+        Variable-size window → window size changes based on condition.
+
+
+    int left = 0; // Window start
+    int right = 0; // Window end (expands)
+
+    // Often needed for tracking condition (e.g., char frequency, distinct count)
+    unordered_map<char, int> windowMap;
+
+    // Variable to store the final answer
+    int result = 0;
+
+    // Expand the window by moving `right`
+    for (right = 0; right < n; right++) {
+        // 1. Add the element at `right` to the window
+        windowMap[s[right]]++;
+
+        // 2. CHECK CONDITION: Is the current window invalid?
+        while (/* window is invalid */) {
+            // 3. Shrink the window from the left until it becomes valid again
+            windowMap[s[left]]--;
+            if (windowMap[s[left]] == 0) {
+                windowMap.erase(s[left]);
+            }
+            left++; // Shrink the window
+        }
+
+        // 4. The window is now valid! Update the result.
+        // (e.g., result = max(result, right - left + 1);)
+        result = max(result, right - left + 1);
+    }
+    return result;
+
+
+
+
+
+
+3. Fast-Slow / Tortoise-Hare
+
+    Two pointers move at different speeds (slow & fast).
+
+    Use: Cycle detection in linked lists or sequences.
+
+//_________________________________________________________________\\
+4. Partitioning / Segregation
+
+    Two pointers divide array into regions.
+
+    Use: Segregate 0s and 1s, Dutch National Flag problem, in-place partitioning.
+
+//_________________________________________________________________\\
+5. Merge Two Sorted Arrays
+
+    Iterate over two sorted arrays simultaneously.
+
+    Use: Merge step in merge sort, finding intersections/unions.
+
+//_________________________________________________________________\\
+6. Meet-in-the-Middle
+
+    Split input; use two pointers to combine results efficiently.
+
+    Use: Optimized pair sum counting, subset sum variants.
+
+//_________________________________________________________________\\
+7. Monotonic Queue / Stack via Two Pointers
+
+    Maintain a window/range with a monotonic property.
+
+    Use: Maximum/minimum in sliding window, range optimizations.
+
+//_________________________________________________________________\\
+8. Circular / Rotational Two Pointers
+
+    Consider array circular; pointers wrap around.
+
+    Use: Rotated arrays, circular subarray sums.
+//_________________________________________________________________\\
+
+9. In-place Reordering / Swapping
+
+    Pointers move towards each other to swap elements under conditions.
+
+//_________________________________________________________________\\
+    Use: Reverse array, partition negatives/positives, custom ordering.
+
+10. Interval / Range Expansion
+
+    One pointer fixes start; another expands end to satisfy range conditions.
+
+    Use: Counting subarrays, range queries, interval problems.

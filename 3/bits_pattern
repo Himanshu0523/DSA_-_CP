@@ -1,0 +1,15 @@
+count 1 to N
+
+in dp to store not of bits
+    count_ones(n) = count_ones(n // 2) + (n % 2)
+
+This means:
+    The count of 1s in n =
+        (count of 1s in half of n) + (1 if n is odd, else 0)    
+    So as numbers double, the pattern repeats and extends by 1 bit.
+
+
+
+set Bit      n                    (1 << i)
+clear Bit    n &= ~(1 << i)       set the ith bit to 0
+Toggle bit   n ^= (1 << i)        Flip the i-th bit is 1

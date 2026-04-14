@@ -1,0 +1,15 @@
+
+What is a Subsequence?
+
+    A subsequence is a sequence derived from another sequence by deleting zero or more elements without changing the order of the remaining elements.
+
+    Example: For sequence "abc", subsequences are:
+
+    "", "a", "b", "c", "ab", "ac", "bc", "abc"
+
+Key Properties:
+    Order is Preserved
+    Not necessarily contiguous
+    Total Subsequence : 2^n 
+
+
