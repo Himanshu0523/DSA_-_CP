@@ -1,0 +1,7 @@
+* Basics: declaration, initialization, memory layout
+* Operations: insertion, deletion, traversal
+* Problems:
+
+  * Kadane’s Algorithm (Max Subarray)
+  * Prefix Sum, Sliding Window
+  * Two-pointer, Merge Intervals, Dutch National Flag

@@ -1,0 +1,59 @@
+| Day | Focus                                                                                          | Practice Suggestions              |
+| --- | ---------------------------------------------------------------------------------------------- | --------------------------------- |
+| 1   | `vector`, `array`, `deque` – internal structure, use in dynamic arrays/sliding window problems | LeetCode: Easy Arrays             |
+| 2   | `stack`, `queue`, `priority_queue` – use in BFS, monotonic stack, Dijkstra                     | Stack problems                    |
+| 3   | `set`, `multiset`, `unordered_set` – frequency, uniqueness, lower/upper bounds                 | Codeforces: Ordered Set           |
+| 4   | `map`, `unordered_map`, `multimap` – frequency count, prefix sum map, hashing                  | HashMap problems                  |
+| 5   | Custom comparators in `set`, `map`, `priority_queue` – sort by 2+ fields                       | Custom sort + comparator problems |
+| 6   | Iterators, ranges, `auto`, `for_each`                                                          | Practice STL loops                |
+| 7   | Revision + Micro Contest (use only STL to solve 5 problems)                                    | 60-min timed contest              |
+
+
+⚙️ WEEK 2: STL Algorithms + Utility Tools
+| Day | Focus                                                                             | Practice Suggestions   |
+| --- | --------------------------------------------------------------------------------- | ---------------------- |
+| 8   | `<algorithm>` functions: `sort`, `reverse`, `min_element`, `max_element`, `count` | Sorting problems       |
+| 9   | `binary_search`, `lower_bound`, `upper_bound` – searching in sorted arrays        | Binary Search CP       |
+| 10  | `next_permutation`, `rotate`, `is_sorted`, `partition`                            | Permutations & Subsets |
+| 11  | Lambda with STL – using inline predicates                                         | Lambda quiz            |
+| 12  | `accumulate` (from `<numeric>`), `iota`, `gcd`, `lcm`, `__gcd`                    | GCD/LIS/Prefix sum     |
+| 13  | `bitset` – Sieve, bitmasking tricks, subset generation                            | Bitmask problems       |
+| 14  | Revision + Contest (focus: STL algorithms + custom sorting + bit tricks)          | 5 CP problems          |
+
+🧠 WEEK 3: CP Speed, Input/Output, and Template Power
+| Day | Focus                                                                                     | Practice Suggestions   |
+| --- | ----------------------------------------------------------------------------------------- | ---------------------- |
+| 15  | Fast I/O: `ios::sync_with_stdio(false);`, `cin.tie(NULL);` + `scanf/printf` vs `cin/cout` | I/O heavy problems     |
+| 16  | Custom input templates + macros for `debug`, `rep(i,n)`, etc.                             | Setup your CP template |
+| 17  | Pairs, tuples, structured bindings (`tie`, `make_pair`, `structured binding`)             | Tuple-based problems   |
+| 18  | `chrono` for timing solutions, avoid TLE                                                  | Time benchmarking      |
+| 19  | STL pitfalls (e.g., `vector<bool>`, unordered\_map worst-case)                            | Identify TLE/MLE       |
+| 20  | In-place modification tricks: `remove_if`, `unique`, `erase idiom`                        | In-place questions     |
+| 21  | CP-style STL recap contest: Arrays, sets, maps, searching, sorting                        | Mixed DSA test         |
+
+🔋 WEEK 4: Boost for CP + DP + Graph Templates
+| Day | Focus                                                                           | Practice Suggestions |
+| --- | ------------------------------------------------------------------------------- | -------------------- |
+| 22  | `Boost::multiprecision` – BigInteger/factorial beyond `long long`               | Big number problems  |
+| 23  | `Boost::geometry` – geometry template tricks (optional, for Geo-heavy contests) | Geometry problems    |
+| 24  | `Boost::dynamic_bitset` – better than STL bitset (optional for DP bitmask)      | DP mask problems     |
+| 25  | Matrix templates + prefix sum arrays (handwritten or Eigen basics)              | DP prefix/matrix     |
+| 26  | Graph adjacency list with `vector<pair>` + BFS, DFS templates                   | Graph problems       |
+| 27  | Dijkstra, Prim, Kruskal with STL/priority\_queue/set                            | Graph CP problems    |
+| 28  | Final recap: STL in CP, Boost CP tools, IO, macros, `chrono`, + full test       | Codeforces Div3 Set  |
+| 29  | **Mock CP contest** (2 hrs, 5 problems, only STL & templates)                   | Competitive test     |
+| 30  | Review + Notes + GitHub commit + Performance Analysis                           | Setup next practice  |
+
+
+| Template              | Library Involved             |
+| --------------------- | ---------------------------- |
+| Fast I/O Setup        | `iostream`, `cstdio`         |
+| Comparator Sort       | `algorithm`, `pair`          |
+| Custom Hashmap        | `unordered_map`, Boost       |
+| Sliding Window        | `deque`, `vector`            |
+| Binary Search Wrapper | `lower_bound`, `upper_bound` |
+| Graph/BFS/DFS         | `vector`, `queue`, `set`     |
+| Bitmask DP            | `bitset`, Boost, macros      |
+| Dijkstra’s Algo       | `priority_queue`, `set`      |
+| STL Macros            | `#define`, `typedef`         |
+| Segment Tree Template | `vector`, recursion          |
